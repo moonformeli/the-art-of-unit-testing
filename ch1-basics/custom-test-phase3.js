@@ -1,10 +1,10 @@
 'use strict';
 
 // 실행 모듈 (Suite Under Test - SUT)
-const { sum } = require('./number-parser');
+const { sum, totalSoFar } = require('./number-parser2');
 
 /**
- * 검증을 위한 메서드
+ * 값 비교를 위한 검증 함수
  * @param actual (any type)
  * @param expected (any type)
  */
@@ -32,14 +32,13 @@ const check = (name, implementation) => {
 
 /**
  * 테스트 코드
- * 실행하려면: "node ch1-basics/custom-test-phase2.js
+ * 실행하려면: "node ch1-basics/custom-test-phase3.js
  */
-check('sum with 2 numbers should sum them up', () => {
-  const result = sum('1,2');
-  assertEquals(3, result);
+check('totalSoFar by Default is 0', () => {
+  assertEquals(0, totalSoFar());
 });
-
-check('sum with multiple digit numbers should sum them up', () => {
-  const result = sum('10,20');
-  assertEquals(30, result);
+check('totalSoFar after summing is bigger', () => {
+  sum('1,2');
+  sum('1,2');
+  assertEquals(6, totalSoFar());
 });
