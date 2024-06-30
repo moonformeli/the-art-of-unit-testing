@@ -1,3 +1,8 @@
+const {
+  PasswordVerifier,
+  SUNDAY,
+} = require('../02-inject-object/password-verifier-time02');
+
 function FakeTimeProvider(fakeDay) {
   this.getDay = function () {
     return fakeDay;
