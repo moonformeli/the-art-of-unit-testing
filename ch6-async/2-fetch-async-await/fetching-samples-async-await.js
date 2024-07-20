@@ -1,3 +1,5 @@
+const fetch = require('node-fetch');
+
 // 진입점
 const isWebsiteAlive = async () => {
   try {
