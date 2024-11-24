@@ -35,8 +35,9 @@ npm install
 ```
 
 설치가 제대로 이뤄지지 않는다면, 아래의 방법을 시도 후 다시 설치해 보세요.
-yarn을 이용해 설치하는 경우 - package-lock.json 파일 삭제 후 `yarn` 명령어를 실행하여 패키지 설치
-npm을 이용해 설치하는 경우 - yarn.lock 파일 삭제 후 `npm install` 명령어를 실행하여 패키지 설치
+
+- yarn을 이용해 설치하는 경우: package-lock.json 파일 삭제 후 `yarn` 명령어를 실행하여 패키지 설치
+- npm을 이용해 설치하는 경우: yarn.lock 파일 삭제 후 `npm install` 명령어를 실행하여 패키지 설치
 
 2. package.json 파일의 `scripts` 명령어 모음을 보시면, 각 챕터 별로 실행할 수 있도록 설정해 놓았습니다. 다음과 같이 명령어를 실행해 챕터별로 테스트 코드를 확인해 보세요.
 
