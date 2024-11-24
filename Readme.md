@@ -1,5 +1,7 @@
 이 프로젝트는 The Art of Unit Testing의 번역서의 예제 코드를 담고 있습니다.
 
+길벗 출판사의 https://github.com/gilbutITbook/080410 깃허브에서도 확인하실 수 있습니다.
+
 # 노드 버전 변경
 
 모든 예제는 Node.js 16.20.0 버전을 기준으로 작성되었습니다.
